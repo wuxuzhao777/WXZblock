@@ -13,6 +13,12 @@
 		00C1ADF61EB9871A001059FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C1ADF41EB9871A001059FB /* Main.storyboard */; };
 		00C1ADF81EB9871A001059FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C1ADF71EB9871A001059FB /* Assets.xcassets */; };
 		00C1ADFB1EB9871A001059FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C1ADF91EB9871A001059FB /* LaunchScreen.storyboard */; };
+		00C1AE041EB9A958001059FB /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C1AE031EB9A958001059FB /* People.m */; };
+		00C1AE071EB9D79F001059FB /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C1AE061EB9D79F001059FB /* CustomButton.m */; };
+		2DF612332269606A001CD387 /* KsIMSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DF6123122696069001CD387 /* KsIMSDK.bundle */; };
+		2DF612342269606A001CD387 /* KsIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF612322269606A001CD387 /* KsIMSDK.framework */; };
+		2DF61240226962DB001CD387 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF6123F226962DB001CD387 /* libsqlite3.tbd */; };
+		2DF61242226962E3001CD387 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF61241226962E3001CD387 /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,16 @@
 		00C1ADF71EB9871A001059FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C1ADFA1EB9871A001059FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C1ADFC1EB9871A001059FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C1AE021EB9A957001059FB /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		00C1AE031EB9A958001059FB /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		00C1AE051EB9D79F001059FB /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		00C1AE061EB9D79F001059FB /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		2DF6123122696069001CD387 /* KsIMSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KsIMSDK.bundle; sourceTree = "<group>"; };
+		2DF612322269606A001CD387 /* KsIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KsIMSDK.framework; sourceTree = "<group>"; };
+		2DF6123622696086001CD387 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		2DF6123822696090001CD387 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2DF6123F226962DB001CD387 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2DF61241226962E3001CD387 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF61242226962E3001CD387 /* libxml2.tbd in Frameworks */,
+				2DF61240226962DB001CD387 /* libsqlite3.tbd in Frameworks */,
+				2DF612342269606A001CD387 /* KsIMSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +63,7 @@
 			children = (
 				00C1ADEA1EB9871A001059FB /* Block */,
 				00C1ADE91EB9871A001059FB /* Products */,
+				2DF6123522696086001CD387 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +78,16 @@
 		00C1ADEA1EB9871A001059FB /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				2DF6123122696069001CD387 /* KsIMSDK.bundle */,
+				2DF612322269606A001CD387 /* KsIMSDK.framework */,
 				00C1ADEE1EB9871A001059FB /* AppDelegate.h */,
 				00C1ADEF1EB9871A001059FB /* AppDelegate.m */,
 				00C1ADF11EB9871A001059FB /* ViewController.h */,
 				00C1ADF21EB9871A001059FB /* ViewController.m */,
+				00C1AE051EB9D79F001059FB /* CustomButton.h */,
+				00C1AE061EB9D79F001059FB /* CustomButton.m */,
+				00C1AE021EB9A957001059FB /* People.h */,
+				00C1AE031EB9A958001059FB /* People.m */,
 				00C1ADF41EB9871A001059FB /* Main.storyboard */,
 				00C1ADF71EB9871A001059FB /* Assets.xcassets */,
 				00C1ADF91EB9871A001059FB /* LaunchScreen.storyboard */,
@@ -77,6 +103,17 @@
 				00C1ADEC1EB9871A001059FB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DF6123522696086001CD387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DF61241226962E3001CD387 /* libxml2.tbd */,
+				2DF6123F226962DB001CD387 /* libsqlite3.tbd */,
+				2DF6123822696090001CD387 /* libsqlite3.0.tbd */,
+				2DF6123622696086001CD387 /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF612332269606A001CD387 /* KsIMSDK.bundle in Resources */,
 				00C1ADFB1EB9871A001059FB /* LaunchScreen.storyboard in Resources */,
 				00C1ADF81EB9871A001059FB /* Assets.xcassets in Resources */,
 				00C1ADF61EB9871A001059FB /* Main.storyboard in Resources */,
@@ -151,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C1AE041EB9A958001059FB /* People.m in Sources */,
+				00C1AE071EB9D79F001059FB /* CustomButton.m in Sources */,
 				00C1ADF31EB9871A001059FB /* ViewController.m in Sources */,
 				00C1ADF01EB9871A001059FB /* AppDelegate.m in Sources */,
 				00C1ADED1EB9871A001059FB /* main.m in Sources */,
@@ -272,8 +312,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38T2E65NPU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Block",
+				);
 				INFOPLIST_FILE = Block/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boomsense.test.Block;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -284,8 +329,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38T2E65NPU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Block",
+				);
 				INFOPLIST_FILE = Block/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boomsense.test.Block;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -310,6 +360,7 @@
 				00C1AE011EB9871A001059FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
